@@ -1,0 +1,34 @@
+<div class="card bg-light m-5">
+    <div class="card-body">
+        <h3>
+            Instructions
+        </h3>
+        <br>
+        <p>
+            In this study, you will be randomly and anonymously paired with another
+            participant. One of you will be selected at random to be participant A,
+            and the other will be participant B. You are going to play a sequential 
+            game, that runs at most for {{ C.NUM_ROUNDS }} rounds.
+        </p>
+        <p>
+            There is a pot with value of {{ C.INITIAL_POT }} that will be shared among 
+            the two participants. Starting with participant A, players will sequentially 
+            make decisions on whether to take (<b>T</b>) the pot or to pass (<b>P</b>). 
+            By choosing <b>T</b>, you will receive 80% of the current value of the pot, 
+            while your opponent gets the remaining. Choosing <b>P</b> will increase the 
+            pot by an amount of {{ C.POT_INCREMENT }} and its now your opponent's turn.
+        </p>
+        <p>
+            When reaching the end, two endings are possible:
+            <ul>
+                <li>
+                    <b>Fair-end:</b> both players receive 50% of the resource
+                </li>
+                <li>
+                    <b>Zero-end:</b> both players receive a payoff of 0
+                </li>
+            </ul>
+        </p>
+        <img src="https://t.ctcdn.com.br/JlHwiRHyv0mTD7GfRkIlgO6eQX8=/640x360/smart/i257652.jpeg"/>
+    </div>
+    </div>
